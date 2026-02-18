@@ -9,3 +9,7 @@ app = FastAPI(title="HRMS Lite Full Assignment")
 
 app.include_router(employee_routes.router)
 app.include_router(attendance_routes.router)
+
+@app.get("/")
+def home():
+    return {"message": "HRMS Lite API Running"}
