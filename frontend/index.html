@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HRMS Lite</title>
+</head>
+<body>
+<h2>Add Employee</h2>
+<form id="empForm">
+Name: <input type="text" id="name"><br><br>
+Department: <input type="text" id="department"><br><br>
+<button type="submit">Add Employee</button>
+</form>
+
+<script>
+document.getElementById("empForm").addEventListener("submit", async function(e){
+    e.preventDefault();
+    const name = document.getElementById("name").value;
+    const department = document.getElementById("department").value;
+
+    await fetch("http://127.0.0.1:8000/employees/?name=" + name + "&department=" + department, {
+        method: "POST"
+    });
+
+    alert("Employee Added");
+});
+</script>
+</body>
+</html>
