@@ -1,19 +1,41 @@
+# HRMS Lite – Full Stack Assignment
 
-HRMS Lite Full Assignment
+Deployed Full Stack HRMS application with REST APIs and live production deployment.
 
-Features:
-- Employee Management
-- Attendance Tracking
+## Live Demo
+API Base URL:
+https://hrms-lite-i4bt.onrender.com
+
+API Docs (Swagger):
+https://hrms-lite-i4bt.onrender.com/docs
+
+GitHub Repository:
+https://github.com/pawan45666/hrms-lite
+
+---
+
+## Features
+- Employee Management (Add & List Employees)
+- Attendance Management
 - FastAPI Backend
 - SQLite Database
-- Basic Frontend UI
+- Basic Frontend UI (HTML + JS)
+- REST API with Swagger Docs
+- Deployed on Render
 
-Run Backend:
-pip install -r requirements.txt
-uvicorn app.main:app --reload
+---
 
-Open API Docs:
-http://127.0.0.1:8000/docs
+## Tech Stack
+Backend:
+- Python
+- FastAPI
+- SQLAlchemy
+- SQLite
 
 Frontend:
-Open frontend/index.html in browser
+- HTML
+- JavaScript
+
+Deployment:
+- Render
+- 
